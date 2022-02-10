@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Parameter Tampering";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h3>Add your book:</h3>
+
+<form asp-action="ParameterTampering" method="post">
+    Title: <input type="text" name="Title" value=""/> <br/>
+    Description: <input type="text" name="Description" value=""/> <br/>
+    <input type="submit" value="Create">
+</form>

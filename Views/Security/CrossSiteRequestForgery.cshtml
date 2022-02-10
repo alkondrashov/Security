@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Cross Site Request Forgery (CSRF)";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="CreateDataValue" method="post">
+    Name: <input type="text" name="Name" value=""/> <br/>
+    Value: <input type="text" name="Value" value=""/> <br/>
+    <input type="submit" value="Create">
+</form>

@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "HTTP Parameter Pollution";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="SearchById" method="get">
+    <input type="text" name="id" value="" /> <br/>
+    <input type="submit" value="Search" /> <br/>
+</form>
